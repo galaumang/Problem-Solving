@@ -1,0 +1,39 @@
+plugins {
+  id 'jacoco'
+  id 'java'
+  id 'org.sonarqube' version '2.7'
+}
+
+group 'com.directu'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
+  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
+
+test {
+  useJUnitPlatform()
+  testLogging {
+    events "standardOut", "standardError", "failed", "skipped", "passed"//, "started"
+  }
+}
+
+jacocoTestReport {
+  reports {
+    xml.enabled true
+    xml.destination = file('build/jacoco/report.xml')
+  }
+}
+
+sonarqube {
+  properties {
+    // project name in SonarCloud
+    property 'sonar.projectName', 'problem-solving'
+  }
+}
+
+project.tasks['sonarqube'].dependsOn 'jacocoTestReport'
