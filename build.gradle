@@ -8,9 +8,17 @@ group 'com.directu'
 
 repositories {
   mavenCentral()
+  maven {
+    url 'https://maven.pkg.github.com/direct-u/common'
+    credentials {
+      username = 'problem-solving'
+      password = System.getenv("GITHUB_TOKEN")
+    }
+  }
 }
 
 dependencies {
+  implementation 'com.directu:common:0.1.0'
   testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
   testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
