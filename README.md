@@ -18,6 +18,18 @@ Implementing solution with unit tests for Algorithms and LeetCode problems
 | 1    | No Three                                              | [Java][DP1.java]     |
 | 2    | String Convert                                        | [Java][DP2.java]     |
 
+### Sort Algorithm
+
+| #    | Title                                                 | Solution             |
+|------|-------------------------------------------------------|----------------------|
+| 1    | Bubble Sort                                           | [Java][S1.java]      |
+| 2    | Heap Sort                                             | [Java][S2.java]      |
+| 3    | Insertion Sort                                        | [Java][S3.java]      |
+| 4    | Merge Sort                                            | [Java][S4.java]      |
+| 5    | Quick Sort                                            | [Java][S5.java]      |
+| 6    | Selection Sort                                        | [Java][S6.java]      |
+| 7    | Shell Sort                                            | [Java][S7.java]      |
+
 ### LeetCode
 | #    | Title                                                 | Solution             |
 |------|-------------------------------------------------------|----------------------|
@@ -39,3 +51,12 @@ the MIT License provided in the file [LICENSE](LICENSE).
 
 [DP1.java]: ./src/main/java/com/directu/problemsolving/dynamic/NoThree.java
 [DP2.java]: ./src/main/java/com/directu/problemsolving/dynamic/StringConvert.java
+
+[S1.java]: ./src/main/java/com/directu/problemsolving/sort/BubbleSort.java
+[S2.java]: ./src/main/java/com/directu/problemsolving/sort/HeapSort.java
+[S3.java]: ./src/main/java/com/directu/problemsolving/sort/InsertionSort.java
+[S4.java]: ./src/main/java/com/directu/problemsolving/sort/MergeSort.java
+[S5.java]: ./src/main/java/com/directu/problemsolving/sort/QuickSort.java
+[S6.java]: ./src/main/java/com/directu/problemsolving/sort/SelectionSort.java
+[S7.java]: ./src/main/java/com/directu/problemsolving/sort/ShellSort.java
+
