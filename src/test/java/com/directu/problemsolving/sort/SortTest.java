@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  *
  * @author Umang G
  */
-public class SortTest {
+class SortTest {
   private static Stream<Arguments> testCases() {
     return Stream.of(
         Arguments.of(new int[]{23, 38, 19, 1, 22}, new int[]{1, 19, 22, 23, 38}),

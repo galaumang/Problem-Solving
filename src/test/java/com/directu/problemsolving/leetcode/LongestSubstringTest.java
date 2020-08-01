@@ -19,6 +19,7 @@ class LongestSubstringTest {
         Arguments.of("abcabcbb", 3),
         Arguments.of("bbbbb", 1),
         Arguments.of("xyz", 3),
+        Arguments.of("", 0),
         Arguments.of("pwwkew", 3)
     );
   }
