@@ -22,9 +22,9 @@ class NoThreeTest {
     );
   }
 
-  @ParameterizedTest(name = "Max sum with no three consec - {index} > {0} > ")
+  @ParameterizedTest(name = "{index} > {0} > ")
   @MethodSource("testCases")
-  public void testMaximumSumWithNoThreeConsecutiveElement(int[] nums, int expected) {
+  void testMaximumSumWithNoThreeConsecutiveElement(int[] nums, int expected) {
     assertEquals(expected, NoThree.maximumSumWithNoThreeConsecutiveElement(nums));
   }
 }

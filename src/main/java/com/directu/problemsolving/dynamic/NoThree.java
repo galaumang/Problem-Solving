@@ -12,6 +12,13 @@ import com.directu.common.util.IntegerUtils;
  */
 public class NoThree {
   /**
+   * <p>{@code NoThree} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private NoThree() {
+  }
+
+  /**
    * maximumSumWithNoThreeConsecutiveElement
    * function to find a maximum possible sum of subsequence, with the
    * restriction that we are not allowed to take three consecutive elements
@@ -45,7 +52,6 @@ public class NoThree {
       int three = solution[length - 1];
       solution[length] = IntegerUtils.maximum(one, two, three);
     }
-    // printSolution(solution);
     return solution[inputSequence.length];
   }
 }

@@ -9,6 +9,13 @@ import com.directu.common.util.ArrayUtils;
  */
 public class BubbleSort {
   /**
+   * <p>{@code BubbleSort} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private BubbleSort() {
+  }
+
+  /**
    * Bubble sort algorithm
    *
    * @param elements elements to sort

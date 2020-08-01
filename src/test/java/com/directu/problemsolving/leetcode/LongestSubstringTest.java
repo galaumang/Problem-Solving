@@ -18,25 +18,26 @@ class LongestSubstringTest {
     return Stream.of(
         Arguments.of("abcabcbb", 3),
         Arguments.of("bbbbb", 1),
+        Arguments.of("xyz", 3),
         Arguments.of("pwwkew", 3)
     );
   }
 
   @ParameterizedTest(name = "Without repeating characters - Brute Force - {index} > {0} > ")
   @MethodSource("testCases")
-  public void testLengthOfLongestSubstringWithoutRepeatingCharBruteForce(String input, int expected) {
+  void testLengthOfLongestSubstringWithoutRepeatingCharBruteForce(String input, int expected) {
     assertEquals(expected, LongestSubstring.lengthOfLongestSubstringWithoutRepeatingCharBruteForce(input));
   }
 
   @ParameterizedTest(name = "Without repeating characters - Sliding Window - {index} > {0} > ")
   @MethodSource("testCases")
-  public void testLengthOfLongestSubstringWithoutRepeatingCharSlidingWindow(String input, int expected) {
+  void testLengthOfLongestSubstringWithoutRepeatingCharSlidingWindow(String input, int expected) {
     assertEquals(expected, LongestSubstring.lengthOfLongestSubstringWithoutRepeatingCharSlidingWindow(input));
   }
 
   @ParameterizedTest(name = "Without repeating characters - Sliding Window Optimized - {index} > {0} > ")
   @MethodSource("testCases")
-  public void testLengthOfLongestSubstringWithoutRepeatingCharSlidingWindowOptimized(String input, int expected) {
+  void testLengthOfLongestSubstringWithoutRepeatingCharSlidingWindowOptimized(String input, int expected) {
     assertEquals(expected, LongestSubstring.lengthOfLongestSubstringWithoutRepeatingCharSlidingWindowOptimized(input));
   }
 }

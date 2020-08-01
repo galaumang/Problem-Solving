@@ -24,7 +24,7 @@ class StringConvertTest {
 
   @ParameterizedTest(name = "{index} > {0}, {1} > ")
   @MethodSource("testCases")
-  public void testMaximumSumWithNoThreeConsecutiveElement(String toConvert, String toMatch, int cost) {
+  void testMaximumSumWithNoThreeConsecutiveElement(String toConvert, String toMatch, int cost) {
     assertEquals(cost, StringConvert.convertString(toConvert, toMatch));
   }
 }

@@ -15,6 +15,13 @@ import java.util.Set;
  */
 public class LongestSubstring {
   /**
+   * <p>{@code LongestSubstring} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private LongestSubstring() {
+  }
+
+  /**
    * lengthOfLongestSubstringWithoutRepeatingCharBruteForce
    *
    * @param s input string
@@ -39,7 +46,9 @@ public class LongestSubstring {
   public static int lengthOfLongestSubstringWithoutRepeatingCharSlidingWindow(String s) {
     int n = s.length();
     Set<Character> set = new HashSet<>();
-    int ans = 0, i = 0, j = 0;
+    int ans = 0;
+    int i = 0;
+    int j = 0;
     while (i < n && j < n) {          // try to extend the range [i, j]
       if (!set.contains(s.charAt(j))) {
         set.add(s.charAt(j++));
@@ -57,7 +66,8 @@ public class LongestSubstring {
    * @return length of longest substring without repeating characters
    */
   public static int lengthOfLongestSubstringWithoutRepeatingCharSlidingWindowOptimized(String s) {
-    int n = s.length(), ans = 0;
+    int n = s.length();
+    int ans = 0;
     Map<Character, Integer> map = new HashMap<>();  // current index of character
     for (int j = 0, i = 0; j < n; j++) {            // try to extend the range [i, j]
       if (map.containsKey(s.charAt(j)))

@@ -13,6 +13,13 @@ import com.directu.common.util.IntegerUtils;
  */
 public class StringConvert {
   /**
+   * <p>{@code StringConvert} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private StringConvert() {
+  }
+
+  /**
    * convertString
    * function to convert string X into string Y at minimal cost.
    *

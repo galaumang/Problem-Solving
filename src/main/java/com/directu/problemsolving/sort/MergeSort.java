@@ -7,6 +7,13 @@ package com.directu.problemsolving.sort;
  */
 public class MergeSort {
   /**
+   * <p>{@code MergeSort} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private MergeSort() {
+  }
+
+  /**
    * Merge sort algorithm
    *
    * @param elements elements to sort

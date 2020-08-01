@@ -7,6 +7,13 @@ package com.directu.problemsolving.sort;
  */
 public class InsertionSort {
   /**
+   * <p>{@code InsertionSort} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private InsertionSort() {
+  }
+
+  /**
    * Insertion sort algorithm
    *
    * @param elements elements to sort

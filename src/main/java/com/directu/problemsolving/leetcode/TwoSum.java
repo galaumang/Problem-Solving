@@ -11,6 +11,13 @@ import java.util.Map;
  */
 public class TwoSum {
   /**
+   * <p>{@code TwoSum} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private TwoSum() {
+  }
+
+  /**
    * twoSumOnePassHashTable
    *
    * @param nums   array elements

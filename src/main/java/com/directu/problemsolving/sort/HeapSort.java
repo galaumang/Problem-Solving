@@ -9,6 +9,13 @@ import com.directu.common.util.ArrayUtils;
  */
 public class HeapSort {
   /**
+   * <p>{@code HeapSort} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private HeapSort() {
+  }
+
+  /**
    * Heap sort algorithm
    *
    * @param elements elements to sort

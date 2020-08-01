@@ -24,49 +24,49 @@ public class SortTest {
 
   @ParameterizedTest(name = "Bubble Sort - {index} > {0} > ")
   @MethodSource("testCases")
-  public void bubbleSortTest(int[] inputElements, int[] expected) {
+  void bubbleSortTest(int[] inputElements, int[] expected) {
     BubbleSort.sort(inputElements);
     assertArrayEquals(expected, inputElements);
   }
 
   @ParameterizedTest(name = "Heap Sort - {index} > {0} > ")
   @MethodSource("testCases")
-  public void heapSortTest(int[] inputElements, int[] expected) {
+  void heapSortTest(int[] inputElements, int[] expected) {
     HeapSort.sort(inputElements);
     assertArrayEquals(expected, inputElements);
   }
 
   @ParameterizedTest(name = "Insertion Sort - {index} > {0} > ")
   @MethodSource("testCases")
-  public void insertionSortTest(int[] inputElements, int[] expected) {
+  void insertionSortTest(int[] inputElements, int[] expected) {
     InsertionSort.sort(inputElements);
     assertArrayEquals(expected, inputElements);
   }
 
   @ParameterizedTest(name = "Merge Sort - {index} > {0} > ")
   @MethodSource("testCases")
-  public void mergeSortTest(int[] inputElements, int[] expected) {
+  void mergeSortTest(int[] inputElements, int[] expected) {
     MergeSort.sort(inputElements, 0, inputElements.length - 1);
     assertArrayEquals(expected, inputElements);
   }
 
   @ParameterizedTest(name = "Quick Sort - {index} > {0} > ")
   @MethodSource("testCases")
-  public void quickSortTest(int[] inputElements, int[] expected) {
+  void quickSortTest(int[] inputElements, int[] expected) {
     QuickSort.sort(inputElements, 0, inputElements.length - 1);
     assertArrayEquals(expected, inputElements);
   }
 
   @ParameterizedTest(name = "Selection Sort - {index} > {0} > ")
   @MethodSource("testCases")
-  public void selectionSortTest(int[] inputElements, int[] expected) {
+  void selectionSortTest(int[] inputElements, int[] expected) {
     SelectionSort.sort(inputElements);
     assertArrayEquals(expected, inputElements);
   }
 
   @ParameterizedTest(name = "Shell Sort - {index} > {0} > ")
   @MethodSource("testCases")
-  public void shellSortTest(int[] inputElements, int[] expected) {
+  void shellSortTest(int[] inputElements, int[] expected) {
     ShellSort.sort(inputElements);
     assertArrayEquals(expected, inputElements);
   }

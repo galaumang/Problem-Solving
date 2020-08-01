@@ -7,6 +7,13 @@ package com.directu.problemsolving.sort;
  */
 public class ShellSort {
   /**
+   * <p>{@code ShellSort} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private ShellSort() {
+  }
+
+  /**
    * Shell sort algorithm
    *
    * @param elements elements to sort

@@ -9,6 +9,13 @@ import com.directu.common.util.ArrayUtils;
  */
 public class QuickSort {
   /**
+   * <p>{@code QuickSort} instance should NOT be constructed in standard
+   * programming, so its defined as private</p>
+   */
+  private QuickSort() {
+  }
+
+  /**
    * Quick sort algorithm
    *
    * @param elements elements to sort
