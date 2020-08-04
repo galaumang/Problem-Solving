@@ -2,10 +2,6 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.directu%3Aproblem-solving&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.directu%3Aproblem-solving)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.directu%3Aproblem-solving&metric=coverage)](https://sonarcloud.io/dashboard?id=com.directu%3Aproblem-solving)
 ![](https://img.shields.io/github/repo-size/galaumang/problem-solving)
-<!--
-![](https://img.shields.io/github/license/direct-u/common?color=orange)
-![](https://img.shields.io/badge/language-java-yellow.svg)
--->
 
 # Problem Solving
 Implementing solution with unit tests for Algorithms and LeetCode problems
@@ -35,6 +31,7 @@ Implementing solution with unit tests for Algorithms and LeetCode problems
 |------|-------------------------------------------------------|----------------------|
 | 1    | [Two Sum][1]                                          | [Java][1.java]       |
 | 3    | [Longest Substring Without Repeating Characters][3]   | [Java][3.java]       |
+| 1426 | [Counting ELements][1426]                             | [Java][1426.java]    |
 
 ## License
 Copyright &copy; 2020 Umang G
@@ -45,9 +42,11 @@ the MIT License provided in the file [LICENSE](LICENSE).
 
 [1]: https://leetcode.com/problems/two-sum/
 [3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+[1426]: https://leetcode.com/problems/counting-elements/
 
 [1.java]: ./src/main/java/com/directu/problemsolving/leetcode/TwoSum.java
 [3.java]: ./src/main/java/com/directu/problemsolving/leetcode/LongestSubstring.java
+[1426.java]: ./src/main/java/com/directu/problemsolving/leetcode/CountingElements.java
 
 [DP1.java]: ./src/main/java/com/directu/problemsolving/dynamic/NoThree.java
 [DP2.java]: ./src/main/java/com/directu/problemsolving/dynamic/StringConvert.java
