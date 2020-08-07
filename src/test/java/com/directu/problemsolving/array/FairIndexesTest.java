@@ -26,7 +26,7 @@ class FairIndexesTest {
 
   @ParameterizedTest(name = "{index} > {0} {1} > ")
   @MethodSource("testCases")
-  void countElementsTest(int[] arrayOne, int[] arrayTwo, int expected) {
+  void fairIndexesTest(int[] arrayOne, int[] arrayTwo, int expected) {
     assertEquals(expected, FairIndexes.fairIndexes(arrayOne, arrayTwo));
   }
 }
