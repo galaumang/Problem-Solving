@@ -29,13 +29,14 @@ Implementing solution with unit tests for Algorithms and LeetCode problems
 | 4    | Merge Sort                                            | [Java][S4.java]      |
 | 5    | Quick Sort                                            | [Java][S5.java]      |
 | 6    | Selection Sort                                        | [Java][S6.java]      |
-| 7    | Shell Sort                                            | [Java][S7.java]      |
+| 7    | Shell Sort                                            | [Java][S7.java]      
 
 ### LeetCode
 | #    | Title                                                 | Solution             |
 |------|-------------------------------------------------------|----------------------|
 | 1    | [Two Sum][1]                                          | [Java][1.java]       |
 | 3    | [Longest Substring Without Repeating Characters][3]   | [Java][3.java]       |
+| 7    | [Reverse Integer][7]                                  | [Java][7.java]       |
 | 556  | [Next Greater Element III][556]                       | [Java][556.java]     |
 | 1426 | [Counting ELements][1426]                             | [Java][1426.java]    |
 
@@ -48,11 +49,13 @@ the MIT License provided in the file [LICENSE](LICENSE).
 
 [1]: https://leetcode.com/problems/two-sum/
 [3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+[7]: https://leetcode.com/problems/reverse-integer/
 [556]: https://leetcode.com/problems/next-greater-element-iii/
 [1426]: https://leetcode.com/problems/counting-elements/
 
 [1.java]: ./src/main/java/com/directu/problemsolving/leetcode/TwoSum.java
 [3.java]: ./src/main/java/com/directu/problemsolving/leetcode/LongestSubstring.java
+[7.java]: ./src/main/java/com/directu/problemsolving/leetcode/ReverseInteger.java
 [556.java]: ./src/main/java/com/directu/problemsolving/leetcode/NextGreaterElement.java
 [1426.java]: ./src/main/java/com/directu/problemsolving/leetcode/CountingElements.java
 
