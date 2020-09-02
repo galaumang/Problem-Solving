@@ -2,9 +2,9 @@ name: build
 on:
   push:
     paths-ignore:
-      - '.github/wiki/**'
       - '.gitignore'
       - 'LICENSE'
+      - 'CONTRIBUTING.md'
       - 'README.md'
     branches: [master]
 jobs:
